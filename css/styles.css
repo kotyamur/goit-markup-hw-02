@@ -29,6 +29,7 @@ address {
 .link:hover, 
 .link:focus {
     color: var(--theme-hover);
+    opacity: 1;
 }
 
 .header {
