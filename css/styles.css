@@ -27,12 +27,6 @@ address {
     text-decoration: none;
 }
 
-.link:hover, 
-.link:focus {
-    color: var(--theme-hover);
-    opacity: 1;
-}
-
 .header-logo {
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
@@ -56,13 +50,19 @@ address {
 }
 
 .header-nav-link {
-    text-decoration: none;
     color: var(--theme-heading);
 }
 
 .header-contacts-link {
     color: inherit;
-    text-decoration: none;
+}
+
+.header-contacts-link:hover,
+.header-nav-link:hover,
+.header-contacts-link:focus,
+.header-nav-link:focus {
+    color: var(--theme-hover);
+    opacity: 1;
 }
 
 .call-title {
@@ -155,6 +155,12 @@ address {
 
 .footer-contacts {
     color: var(--theme-contacts);
+}
+
+.footer-contacts:hover,
+.footer-contacts:focus {
+    color: var(--theme-hover);
+    opacity: 1;
 }
 
 .footer-adress {
